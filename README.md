@@ -877,17 +877,6 @@ print('Again, temperature in kelvin was:', temp_kelvin)
 ```
 
 
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-10-42a414997a50> in <module>
-    ----> 1 print('Again, temperature in kelvin was:', temp_kelvin)
-    
-
-    NameError: name 'temp_kelvin' is not defined
-
-
 
 ```python
 temp_kelvin = fahr_to_kelvin(212)
@@ -907,8 +896,13 @@ def print_temperatures():
     
 temp_fahr = 212.0
 temp_kelvin = fahr_to_kelvin(temp_fahr)
+```
 
-print_temperatures()
+``` python
+print_temperatures():
+
+    Temperature in Fahrenheit was: 212.0
+    Temperature in Kelvin was: 373.15
 ```
 
 
@@ -1222,8 +1216,7 @@ print(normalize_rectangle( (0.0, 0.0, 5.0, 1.0) ))
 input_file_name = input("Enter the name of the input fasta file: ")
 ```
 
-    Enter the name of the input fasta file:  TPO_gene.txt
-
+    Enter the name of the input fasta file:  SUMO_protein.txt
 
 
 ```python
@@ -1235,23 +1228,7 @@ for line in input_file:
     if line.startswith(">"):
         continue
     dna_sequence = line.strip()
-    
-```
-
-
-    ---------------------------------------------------------------------------
-
-    ValueError                                Traceback (most recent call last)
-
-    <ipython-input-31-2f5daa2c1016> in <module>
-          3 with open(input_file_name, "r") as input_file:
-          4     dna_sequence = ""
-    ----> 5 for line in input_file:
-          6     if line.startswith(">"):
-          7         continue
-
-
-    ValueError: I/O operation on closed file.
+    ,,,
 
 
 
@@ -1272,8 +1249,7 @@ for nucleotide in dna_sequence:
 output_file_name = input("Enter the name of the output file: ")
 ```
 
-    Enter the name of the output file:  TPO_gene.txt
-
+    Enter the name of the output file:  SUMO_protein.txt
 
 
 ```python
@@ -1290,6 +1266,8 @@ with open(output_file_name, "w") as output_file:
 
 ```python
 print(rna_sequence)
+
+ AUGUCUGACGAAAAGAAGGGAGGUGAGACCGAGCACAUCAACCUGAAGGUCCUCGGCCAGGACAACGCCGUCGUCCAGUUCAAGAUCAAGAAGCACACACCCUUGAGGAAGCUGAUGAACGCCUACUGCGACCGUGCCGGACUCUCCAUGCAGGUGGUGCGCUUCCGUUUCGACGGACAGCCCAUCAACGAGAACGACACUCCGACCUCGCUGGAGAUGGAGGAGGGCGACACCAUCGAGGUUUACCAGCAGCAGACUGGUGGCGCUCCAUAAAUGUCUGACGAAAAGAAGGGAGGUGAGACCGAGCACAUCAACCUGAAGGUCCUCGGCCAGGACAACGCCGUCGUCCAGUUCAAGAUCAAGAAGCACACACCCUUGAGGAAGCUGAUGAACGCCUACUGCGACCGUGCCGGACUCUCCAUGCAGGUGGUGCGCUUCCGUUUCGACGGACAGCCCAUCAACGAGAACGACACUCCGACCUCGCUGGAGAUGGAGGAGGGCGACACCAUCGAGGUUUACCAGCAGCAGACUGGUGGCGCUCCAUAA
 ```
 
     
@@ -1306,8 +1284,7 @@ input_file_name = input("Enter the name of the input RNA file")
 
 ```
 
-    Enter the name of the input RNA file TPO_gene.txt
-
+    Enter the name of the input RNA file SUMO_protein.txt
 
 
 ```python
@@ -1364,7 +1341,7 @@ for i in range(0, len(rna_sequence), 3):
 output_file_name = input("Enter the name of the output file:" )
 ```
 
-    Enter the name of the output file: TPO_gene.txt
+    Enter the name of the output file: SUMO_protein.txt
 
 
 
@@ -1382,6 +1359,8 @@ with open(output_file_name, "w") as output_file:
 
 ```python
 print(protein_sequence)
+
+ MSDEKKGGETEHINLKVLGQDNAVVQFKIKKHTPLRKLMNAYCDRAGLSMQVVCFRFDGQPINENDTPTSLEMEEGDTIEVYQQQTGGAP
 ```
 
     
